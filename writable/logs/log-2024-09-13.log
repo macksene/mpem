@@ -1,0 +1,155 @@
+INFO - 2024-09-13 02:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 03:21:31 --> ErrorException: Undefined variable: i
+in APPPATH\Views\statiques\publications\conventions.php on line 38.
+ 1 APPPATH\Views\statiques\publications\conventions.php(38): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: i', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\publications\\conventions.php', 38, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\publications\\conventions.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/publications/conventions', [], true)
+ 5 APPPATH\Controllers\Statiques.php(150): view('statiques/publications/conventions', [...])
+ 6 APPPATH\Controllers\Statiques.php(115): App\Controllers\Statiques->afficher('publications/conventions')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-13 03:23:04 --> mysqli_sql_exception: La table 'base_mpem.publications' n'existe pas in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\wamp64\www\mpem\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\wamp64\www\mpem\app\Controllers\Statiques.php(139): CodeIgniter\BaseModel->paginate(6)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(23): App\Controllers\Statiques->afficher('contact')
+#8 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->contact()
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-09-13 03:23:04 --> CodeIgniter\Database\Exceptions\DatabaseException: La table 'base_mpem.publications' n'existe pas
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `publications`', [], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Statiques.php(139): CodeIgniter\BaseModel->paginate(6)
+ 5 APPPATH\Controllers\Statiques.php(23): App\Controllers\Statiques->afficher('contact')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contact()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-13 03:23:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: La table 'base_mpem.publications' n'existe pas
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `publications`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `publications`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `publications`', [], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Statiques.php(139): CodeIgniter\BaseModel->paginate(6)
+ 7 APPPATH\Controllers\Statiques.php(23): App\Controllers\Statiques->afficher('contact')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contact()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-13 03:23:04 --> [Caused by] mysqli_sql_exception: La table 'base_mpem.publications' n'existe pas
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `publications`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `publications`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `publications`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `publications`', [], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Statiques.php(139): CodeIgniter\BaseModel->paginate(6)
+ 8 APPPATH\Controllers\Statiques.php(23): App\Controllers\Statiques->afficher('contact')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contact()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-13 03:23:16 --> mysqli_sql_exception: La table 'base_mpem.publications' n'existe pas in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*)...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\wamp64\www\mpem\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\wamp64\www\mpem\app\Controllers\Statiques.php(139): CodeIgniter\BaseModel->paginate(6)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(115): App\Controllers\Statiques->afficher('publications/co...')
+#8 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2024-09-13 03:23:16 --> CodeIgniter\Database\Exceptions\DatabaseException: La table 'base_mpem.publications' n'existe pas
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `publications`', [], false)
+ 2 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 3 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 4 APPPATH\Controllers\Statiques.php(139): CodeIgniter\BaseModel->paginate(6)
+ 5 APPPATH\Controllers\Statiques.php(115): App\Controllers\Statiques->afficher('publications/conventions')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-13 03:23:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: La table 'base_mpem.publications' n'existe pas
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `publications`')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `publications`')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `publications`', [], false)
+ 4 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 5 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 6 APPPATH\Controllers\Statiques.php(139): CodeIgniter\BaseModel->paginate(6)
+ 7 APPPATH\Controllers\Statiques.php(115): App\Controllers\Statiques->afficher('publications/conventions')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-13 03:23:16 --> [Caused by] mysqli_sql_exception: La table 'base_mpem.publications' n'existe pas
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `publications`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `publications`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `publications`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `publications`', [], false)
+ 5 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 6 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 7 APPPATH\Controllers\Statiques.php(139): CodeIgniter\BaseModel->paginate(6)
+ 8 APPPATH\Controllers\Statiques.php(115): App\Controllers\Statiques->afficher('publications/conventions')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-13 03:41:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 03:41:57 --> ErrorException: Undefined index: categorie
+in APPPATH\Views\statiques\accueil.php on line 261.
+ 1 APPPATH\Views\statiques\accueil.php(261): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: categorie', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 261, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(150): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(20): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->accueil()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-13 03:43:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:51:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:52:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:55:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

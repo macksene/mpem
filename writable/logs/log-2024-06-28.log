@@ -1,0 +1,435 @@
+CRITICAL - 2024-06-28 08:37:27 --> ErrorException: Undefined variable: session
+in APPPATH\Views\statiques\articles.php on line 3.
+ 1 APPPATH\Views\statiques\articles.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 08:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:38:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:41:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:42:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 08:42:01 --> ErrorException: Undefined variable: article
+in APPPATH\Views\statiques\accueil.php on line 4.
+ 1 APPPATH\Views\statiques\accueil.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: article', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 08:42:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 08:42:18 --> ErrorException: Undefined variable: article
+in APPPATH\Views\statiques\accueil.php on line 4.
+ 1 APPPATH\Views\statiques\accueil.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: article', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 08:42:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 08:42:40 --> ErrorException: Undefined offset: 5
+in APPPATH\Views\statiques\accueil.php on line 4.
+ 1 APPPATH\Views\statiques\accueil.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 5', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 08:48:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:48:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:51:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:53:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:54:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:54:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:55:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 08:55:56 --> ErrorException: Undefined variable: article
+in APPPATH\Views\statiques\accueil.php on line 4.
+ 1 APPPATH\Views\statiques\accueil.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: article', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 08:56:20 --> ParseError: syntax error, unexpected 'photo' (T_STRING)
+in APPPATH\Views\statiques\accueil.php on line 4.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 3 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 4 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 08:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:58:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:58:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:58:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:58:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:58:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:59:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:59:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:59:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:59:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 08:59:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 09:08:30 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\statiques\accueil.php on line 283.
+ 1 APPPATH\Views\statiques\accueil.php(283): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 283, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 09:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 09:08:57 --> ErrorException: Undefined property: CodeIgniter\View\View::$session
+in APPPATH\Views\statiques\accueil.php on line 283.
+ 1 APPPATH\Views\statiques\accueil.php(283): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$session', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 283, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 09:10:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 09:10:40 --> ErrorException: session_destroy(): Trying to destroy uninitialized session
+in APPPATH\Views\statiques\accueil.php on line 283.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'session_destroy(): Trying to destroy uninitialized session', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 283, [...])
+ 2 APPPATH\Views\statiques\accueil.php(283): session_destroy()
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 6 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 7 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 09:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:11:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:11:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:11:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:11:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:11:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:12:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:13:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:23:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 09:23:38 --> ErrorException: Array to string conversion
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 APPPATH\Views\statiques\articles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 09:23:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:23:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 09:23:51 --> ErrorException: Array to string conversion
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 APPPATH\Views\statiques\articles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 09:23:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:24:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:29:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:29:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:34:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 09:44:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:00:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:30:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:32:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:54:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 10:54:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:29:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 14:29:52 --> ErrorException: Undefined variable: row
+in APPPATH\Views\statiques\accueil.php on line 281.
+ 1 APPPATH\Views\statiques\accueil.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: row', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 281, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 14:30:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:30:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:30:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:30:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:31:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 14:35:52 --> ErrorException: Undefined index: id_articles
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 APPPATH\Views\statiques\articles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_articles', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 14:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:38:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:38:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:38:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:38:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 14:44:59 --> Error: Call to a member function getResult() on array
+in APPPATH\Views\statiques\accueil.php on line 263.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 4 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 5 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 14:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:45:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 14:45:26 --> Error: Call to a member function getResult() on array
+in APPPATH\Views\statiques\accueil.php on line 263.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 4 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 5 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-28 14:46:48 --> ParseError: syntax error, unexpected '$articles' (T_VARIABLE), expecting '('
+in APPPATH\Views\statiques\accueil.php on line 262.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 3 APPPATH\Controllers\Statiques.php(141): view('statiques/accueil', [...])
+ 4 APPPATH\Controllers\Statiques.php(11): App\Controllers\Statiques->afficher('accueil')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 14:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:48:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 14:48:29 --> ErrorException: Undefined variable: session
+in APPPATH\Views\statiques\articles.php on line 3.
+ 1 APPPATH\Views\statiques\articles.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 14:48:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:49:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 14:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 14:51:52 --> ErrorException: Undefined property: CodeIgniter\View\View::$input
+in APPPATH\Views\statiques\articles.php on line 3.
+ 1 APPPATH\Views\statiques\articles.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: CodeIgniter\\View\\View::$input', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 15:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 15:28:01 --> ErrorException: Undefined variable: request
+in APPPATH\Views\statiques\articles.php on line 3.
+ 1 APPPATH\Views\statiques\articles.php(3): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: request', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 3, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 15:28:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:29:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-06-28 15:33:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 15:33:11 --> Error: Call to undefined function getGet()
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 4 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 5 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 15:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 15:34:03 --> ErrorException: Undefined variable: id
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 APPPATH\Views\statiques\articles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 15:34:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 15:34:34 --> ErrorException: Undefined variable: id
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 APPPATH\Views\statiques\articles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 15:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 15:35:29 --> ErrorException: Undefined variable: id
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 APPPATH\Views\statiques\articles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 15:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 15:35:52 --> ErrorException: Undefined variable: id
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 APPPATH\Views\statiques\articles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 15:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-06-28 15:36:55 --> ErrorException: Undefined variable: id
+in APPPATH\Views\statiques\articles.php on line 4.
+ 1 APPPATH\Views\statiques\articles.php(4): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: id', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php', 4, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/articles', [], true)
+ 5 APPPATH\Controllers\Statiques.php(141): view('statiques/articles', [...])
+ 6 APPPATH\Controllers\Statiques.php(16): App\Controllers\Statiques->afficher('articles')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-06-28 15:36:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

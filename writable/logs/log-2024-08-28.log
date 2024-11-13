@@ -1,0 +1,54 @@
+CRITICAL - 2024-08-28 02:18:15 --> ErrorException: Undefined variable: sep
+in APPPATH\Views\statiques\actualites.php on line 28.
+ 1 APPPATH\Views\statiques\actualites.php(28): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: sep', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\actualites.php', 28, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\actualites.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/actualites', [], true)
+ 5 APPPATH\Controllers\Statiques.php(150): view('statiques/actualites', [...])
+ 6 APPPATH\Controllers\Statiques.php(27): App\Controllers\Statiques->afficher('actualites')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->actualites()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-08-28 02:19:03 --> ErrorException: str_replace() expects at least 3 parameters, 2 given
+in APPPATH\Views\statiques\actualites.php on line 28.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'str_replace() expects at least 3 parameters, 2 given', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\actualites.php', 28, [...])
+ 2 APPPATH\Views\statiques\actualites.php(28): str_replace('-', '2024-06-26')
+ 3 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\actualites.php')
+ 4 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/actualites', [], true)
+ 6 APPPATH\Controllers\Statiques.php(150): view('statiques/actualites', [...])
+ 7 APPPATH\Controllers\Statiques.php(27): App\Controllers\Statiques->afficher('actualites')
+ 8 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->actualites()
+ 9 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+10 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-08-28 02:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 02:25:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-08-28 02:25:05 --> ErrorException: Use of undefined constant article - assumed 'article' (this will throw an Error in a future version of PHP)
+in APPPATH\Views\statiques\accueil.php on line 270.
+ 1 APPPATH\Views\statiques\accueil.php(270): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Use of undefined constant article - assumed \'article\' (this will throw an Error in a future version of PHP)', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 270, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(150): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(20): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->accueil()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-08-28 02:26:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:20:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:22:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:38:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:38:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 13:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 23:57:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-08-28 23:57:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

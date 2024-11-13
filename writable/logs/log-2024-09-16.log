@@ -1,0 +1,581 @@
+CRITICAL - 2024-09-16 15:59:23 --> Error: Class 'App\Controllers\M_publications' not found
+in APPPATH\Controllers\Statiques.php on line 163.
+ 1 APPPATH\Controllers\Statiques.php(115): App\Controllers\Statiques->publier('publications/conventions')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:18:32 --> Error: Call to a member function paginate() on array
+in APPPATH\Controllers\Statiques.php on line 170.
+ 1 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->publier('publications/conventions')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 16:39:27 --> mysqli_sql_exception: Champ 'id_publications' inconnu dans order clause in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\mpem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+#6 C:\wamp64\www\mpem\system\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(141): CodeIgniter\BaseModel->paginate(6)
+#8 C:\wamp64\www\mpem\app\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/co...')
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#11 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-09-16 16:39:27 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_publications' inconnu dans order clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_publications` DESC
+ LIMIT 6', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 4 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 5 APPPATH\Controllers\Statiques.php(141): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:39:27 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_publications' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_publications` DESC
+ LIMIT 6')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_publications` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_publications` DESC
+ LIMIT 6', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 6 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 7 APPPATH\Controllers\Statiques.php(141): CodeIgniter\BaseModel->paginate(6)
+ 8 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:39:27 --> [Caused by] mysqli_sql_exception: Champ 'id_publications' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `articles`
+ORDER BY `id_publications` DESC
+ LIMIT 6', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_publications` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_publications` DESC
+ LIMIT 6')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_publications` DESC
+ LIMIT 6', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 7 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 8 APPPATH\Controllers\Statiques.php(141): CodeIgniter\BaseModel->paginate(6)
+ 9 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 16:47:14 --> mysqli_sql_exception: Champ 'convention' inconnu dans where clause in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\mpem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\wamp64\www\mpem\app\Models\M_publications.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(145): App\Models\M_publications->getConventions()
+#8 C:\wamp64\www\mpem\app\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/co...')
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#11 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-09-16 16:47:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'convention' inconnu dans where clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `publications`
+WHERE `categorie` = convention
+ORDER BY `id_publications` DESC', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Models\M_publications.php(18): CodeIgniter\BaseModel->findAll()
+ 5 APPPATH\Controllers\Statiques.php(145): App\Models\M_publications->getConventions()
+ 6 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:47:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'convention' inconnu dans where clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `publications`
+WHERE `categorie` = convention
+ORDER BY `id_publications` DESC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `publications`
+WHERE `categorie` = convention
+ORDER BY `id_publications` DESC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `publications`
+WHERE `categorie` = convention
+ORDER BY `id_publications` DESC', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Models\M_publications.php(18): CodeIgniter\BaseModel->findAll()
+ 7 APPPATH\Controllers\Statiques.php(145): App\Models\M_publications->getConventions()
+ 8 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:47:14 --> [Caused by] mysqli_sql_exception: Champ 'convention' inconnu dans where clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `publications`
+WHERE `categorie` = convention
+ORDER BY `id_publications` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `publications`
+WHERE `categorie` = convention
+ORDER BY `id_publications` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `publications`
+WHERE `categorie` = convention
+ORDER BY `id_publications` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `publications`
+WHERE `categorie` = convention
+ORDER BY `id_publications` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\M_publications.php(18): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\Statiques.php(145): App\Models\M_publications->getConventions()
+ 9 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:49:26 --> Error: Call to a member function orderBy() on array
+in APPPATH\Controllers\Statiques.php on line 142.
+ 1 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:50:45 --> Error: Call to a member function paginate() on array
+in APPPATH\Controllers\Statiques.php on line 143.
+ 1 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:55:15 --> ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$'
+in APPPATH\Controllers\Statiques.php on line 143.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\mpem\\app\\Controllers\\Statiques.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Statiques')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Statiques')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Statiques')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Statiques', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 16:55:29 --> ParseError: syntax error, unexpected 'orderBy' (T_STRING), expecting ']'
+in APPPATH\Controllers\Statiques.php on line 143.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\mpem\\app\\Controllers\\Statiques.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Statiques')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Statiques')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Statiques')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Statiques', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 17:29:04 --> ErrorException: Undefined variable: alaun
+in APPPATH\Views\statiques\publications\conventions.php on line 46.
+ 1 APPPATH\Views\statiques\publications\conventions.php(46): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: alaun', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\publications\\conventions.php', 46, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\publications\\conventions.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/publications/conventions', [], true)
+ 5 APPPATH\Controllers\Statiques.php(155): view('statiques/publications/conventions', [...])
+ 6 APPPATH\Controllers\Statiques.php(116): App\Controllers\Statiques->afficher('publications/conventions')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-16 21:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-16 21:41:53 --> ErrorException: Undefined index: categorie
+in APPPATH\Views\statiques\accueil.php on line 261.
+ 1 APPPATH\Views\statiques\accueil.php(261): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: categorie', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 261, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(156): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(21): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->accueil()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-16 21:43:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-16 21:47:27 --> ParseError: syntax error, unexpected 'APPEL' (T_STRING), expecting ';' or '{'
+in APPPATH\Controllers\Statiques.php on line 128.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\mpem\\app\\Controllers\\Statiques.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Statiques')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Statiques')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Statiques')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Statiques', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:03:39 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(112): App\Controllers\Statiques->afficher('publications/contrats')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contrats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:05:32 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(112): App\Controllers\Statiques->afficher('publications/contrats')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contrats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:05:34 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(112): App\Controllers\Statiques->afficher('publications/contrats')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contrats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:06:45 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(112): App\Controllers\Statiques->afficher('publications/contrats')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contrats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:08:59 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(112): App\Controllers\Statiques->afficher('publications/contrats')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contrats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:10:04 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(112): App\Controllers\Statiques->afficher('publications/contrats')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->contrats()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:11:43 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 22:12:03 --> mysqli_sql_exception: Champ 'id_services' inconnu dans order clause in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\mpem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+#6 C:\wamp64\www\mpem\system\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#8 C:\wamp64\www\mpem\app\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->index()
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#11 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-09-16 22:12:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 4 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 5 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:12:03 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 6 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 7 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 8 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:12:03 --> [Caused by] mysqli_sql_exception: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 7 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 8 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 9 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 22:12:14 --> mysqli_sql_exception: Champ 'id_services' inconnu dans order clause in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\mpem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+#6 C:\wamp64\www\mpem\system\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#8 C:\wamp64\www\mpem\app\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->index()
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#11 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-09-16 22:12:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 4 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 5 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:12:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 6 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 7 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 8 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:12:14 --> [Caused by] mysqli_sql_exception: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 7 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 8 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 9 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-16 22:12:16 --> mysqli_sql_exception: Champ 'id_services' inconnu dans order clause in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\mpem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+#6 C:\wamp64\www\mpem\system\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#8 C:\wamp64\www\mpem\app\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->index()
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#11 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-09-16 22:12:16 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 4 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 5 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:12:16 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 6 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 7 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 8 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:12:16 --> [Caused by] mysqli_sql_exception: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 7 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 8 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 9 APPPATH\Controllers\Statiques.php(12): App\Controllers\Statiques->afficher('accueil')
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-16 22:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-16 22:14:01 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(28): App\Controllers\Statiques->afficher('actualites')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->actualites()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:14:21 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(28): App\Controllers\Statiques->afficher('actualites')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->actualites()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:16:00 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(28): App\Controllers\Statiques->afficher('actualites')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->actualites()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:19:30 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(28): App\Controllers\Statiques->afficher('actualites')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->actualites()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:19:39 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(28): App\Controllers\Statiques->afficher('actualites')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->actualites()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-16 22:20:49 --> Error: Class 'App\Controllers\M_services' not found
+in APPPATH\Controllers\Statiques.php on line 138.
+ 1 APPPATH\Controllers\Statiques.php(28): App\Controllers\Statiques->afficher('actualites')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->actualites()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

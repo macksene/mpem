@@ -1,0 +1,23 @@
+CRITICAL - 2024-09-18 00:50:55 --> ErrorException: Undefined variable: model1
+in APPPATH\Controllers\Statiques.php on line 159.
+ 1 APPPATH\Controllers\Statiques.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: model1', 'C:\\wamp64\\www\\mpem\\app\\Controllers\\Statiques.php', 159, [...])
+ 2 APPPATH\Controllers\Statiques.php(117): App\Controllers\Statiques->affConventions('publications/conventions')
+ 3 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 01:38:04 --> ArgumentCountError: Too few arguments to function App\Controllers\Statiques::affLicences(), 0 passed in C:\wamp64\www\mpem\app\Controllers\Statiques.php on line 85 and exactly 1 expected
+in APPPATH\Controllers\Statiques.php on line 230.
+ 1 APPPATH\Controllers\Statiques.php(85): App\Controllers\Statiques->affLicences()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-18 01:39:06 --> ArgumentCountError: Too few arguments to function App\Controllers\Statiques::affLicences(), 0 passed in C:\wamp64\www\mpem\app\Controllers\Statiques.php on line 85 and exactly 1 expected
+in APPPATH\Controllers\Statiques.php on line 230.
+ 1 APPPATH\Controllers\Statiques.php(85): App\Controllers\Statiques->affLicences()
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-18 01:48:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

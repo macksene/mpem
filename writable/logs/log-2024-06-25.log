@@ -1,0 +1,325 @@
+CRITICAL - 2024-06-25 09:48:39 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:48:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('home', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:49:05 --> ParseError: syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\pages\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/home', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('pages/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:49:06 --> ParseError: syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\pages\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/home', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('pages/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:49:09 --> ParseError: syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\pages\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/home', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('pages/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 09:50:35 --> ParseError: syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\pages\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('pages/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(22): view('pages/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->view('home')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:13:33 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "views/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('views/home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('views/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('views/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:13:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Views/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views/home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Views/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('Views/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:13:56 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Views/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views/home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Views/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('Views/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:14:26 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Views/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views/home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Views/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('Views/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:15:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Views/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views/home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Views/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('Views/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:15:55 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Views/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views/home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Views/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('Views/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:16:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "Views/home.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Views/home.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Views/home', [], true)
+ 3 APPPATH\Controllers\Pages.php(9): view('Views/home')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Pages->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pages))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:34:20 --> TypeError: Argument 2 passed to view() must be of the type array, null given, called in C:\wamp64\www\newcode4\app\Controllers\Statiques.php on line 9
+in SYSTEMPATH\Common.php on line 1166.
+ 1 APPPATH\Controllers\Statiques.php(9): view('templates/header', null)
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:41:30 --> ParseError: syntax error, unexpected '.'
+in APPPATH\Controllers\Statiques.php on line 11.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(290): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\wamp64\\www\\newcode4\\app\\Controllers\\Statiques.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(266): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Statiques')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Statiques')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\Statiques')
+ 5 SYSTEMPATH\CodeIgniter.php(899): class_exists('\\App\\Controllers\\Statiques', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:47:51 --> ParseError: syntax error, unexpected 'echo' (T_ECHO)
+in APPPATH\Views\statiques\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('Views/statiques/about', [], true)
+ 3 APPPATH\Controllers\Statiques.php(14): view('Views/statiques/about')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->about()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:56:42 --> Error: Call to undefined function App\Controllers\afficher()
+in APPPATH\Controllers\Statiques.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->about()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 10:56:43 --> Error: Call to undefined function App\Controllers\afficher()
+in APPPATH\Controllers\Statiques.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->about()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 11:01:03 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "templates/entete.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/entete.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templates/entete', [], true)
+ 3 APPPATH\Controllers\Statiques.php(26): view('templates/entete', [...])
+ 4 APPPATH\Controllers\Statiques.php(14): App\Controllers\Statiques->afficher('about')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->about()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 11:01:57 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "templates/entete.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/entete.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templates/entete', [], true)
+ 3 APPPATH\Controllers\Statiques.php(27): view('templates/entete', [...])
+ 4 APPPATH\Controllers\Statiques.php(9): App\Controllers\Statiques->afficher('home')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 11:02:08 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "templates/entete.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/entete.php')
+ 2 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('templates/entete', [], true)
+ 3 APPPATH\Controllers\Statiques.php(27): view('templates/entete', [...])
+ 4 APPPATH\Controllers\Statiques.php(9): App\Controllers\Statiques->afficher('home')
+ 5 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 11:59:47 --> ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 11:59:56 --> ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 12:00:09 --> ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 12:03:16 --> ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 12:05:54 --> ParseError: syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+in APPPATH\Config\Routes.php on line 18.
+ 1 SYSTEMPATH\CodeIgniter.php(810): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:02:27 --> Error: Class 'App\Controllers\M_articles' not found
+in APPPATH\Controllers\Statiques.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:02:48 --> Error: Class 'App\Controllers\M_articles' not found
+in APPPATH\Controllers\Statiques.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:03:05 --> Error: Class 'App\Controllers\M_articles' not found
+in APPPATH\Controllers\Statiques.php on line 14.
+ 1 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:32:28 --> Error: Call to a member function getNews() on null
+in APPPATH\Controllers\Statiques.php on line 132.
+ 1 APPPATH\Controllers\Statiques.php(15): App\Controllers\Statiques->afficher('articles')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:47:07 --> ErrorException: Undefined variable: titre
+in APPPATH\Views\articles\V_articles.php on line 1.
+ 1 APPPATH\Views\articles\V_articles.php(1): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: titre', 'C:\\wamp64\\www\\mpem\\app\\Views\\articles\\V_articles.php', 1, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\articles\\V_articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('articles/V_articles', [], true)
+ 5 APPPATH\Controllers\C_articles.php(14): view('articles/V_articles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\C_articles->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_articles))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:47:26 --> ErrorException: Undefined index: id
+in APPPATH\Views\articles\V_articles.php on line 5.
+ 1 APPPATH\Views\articles\V_articles.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id', 'C:\\wamp64\\www\\mpem\\app\\Views\\articles\\V_articles.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\articles\\V_articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('articles/V_articles', [], true)
+ 5 APPPATH\Controllers\C_articles.php(14): view('articles/V_articles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\C_articles->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_articles))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 15:53:58 --> ErrorException: Undefined index: id_description
+in APPPATH\Views\articles\V_articles.php on line 5.
+ 1 APPPATH\Views\articles\V_articles.php(5): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_description', 'C:\\wamp64\\www\\mpem\\app\\Views\\articles\\V_articles.php', 5, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\articles\\V_articles.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('articles/V_articles', [], true)
+ 5 APPPATH\Controllers\C_articles.php(14): view('articles/V_articles', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\C_articles->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\C_articles))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:02:08 --> Error: Class 'App\Controllers\M_articles' not found
+in APPPATH\Controllers\Statiques.php on line 128.
+ 1 APPPATH\Controllers\Statiques.php(15): App\Controllers\Statiques->afficher('articles')
+ 2 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->articles()
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:08:30 --> ErrorException: Undefined variable: value
+in APPPATH\Views\statiques\accueil.php on line 94.
+ 1 APPPATH\Views\statiques\accueil.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 94, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [...], true)
+ 5 APPPATH\Controllers\Statiques.php(140): view('statiques/accueil', [...], [...])
+ 6 APPPATH\Controllers\Statiques.php(21): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->accueil()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:09:20 --> ErrorException: Undefined variable: value
+in APPPATH\Views\statiques\accueil.php on line 94.
+ 1 APPPATH\Views\statiques\accueil.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 94, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(140): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(21): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->accueil()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 16:09:22 --> ErrorException: Undefined variable: value
+in APPPATH\Views\statiques\accueil.php on line 94.
+ 1 APPPATH\Views\statiques\accueil.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: value', 'C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php', 94, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\wamp64\\www\\mpem\\app\\Views\\statiques\\accueil.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1178): CodeIgniter\View\View->render('statiques/accueil', [], true)
+ 5 APPPATH\Controllers\Statiques.php(140): view('statiques/accueil', [...])
+ 6 APPPATH\Controllers\Statiques.php(21): App\Controllers\Statiques->afficher('accueil')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->accueil()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-06-25 23:07:30 --> BadMethodCallException: Call to undefined method App\Models\M_articles::top
+in SYSTEMPATH\Model.php on line 874.
+ 1 APPPATH\Models\M_articles.php(11): CodeIgniter\Model->__call('top', [...])
+ 2 APPPATH\Controllers\Statiques.php(135): App\Models\M_articles->getArticles()
+ 3 APPPATH\Controllers\Statiques.php(20): App\Controllers\Statiques->afficher('accueil')
+ 4 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->accueil()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,314 @@
+ERROR - 2024-09-17 00:17:49 --> mysqli_sql_exception: Champ 'id_services' inconnu dans order clause in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\mpem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+#6 C:\wamp64\www\mpem\system\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(144): CodeIgniter\BaseModel->paginate(6)
+#8 C:\wamp64\www\mpem\app\Controllers\Statiques.php(85): App\Controllers\Statiques->afficher('services/licenc...')
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#11 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-09-17 00:17:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 4 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 5 APPPATH\Controllers\Statiques.php(144): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(85): App\Controllers\Statiques->afficher('services/licence')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-17 00:17:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 6 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 7 APPPATH\Controllers\Statiques.php(144): CodeIgniter\BaseModel->paginate(6)
+ 8 APPPATH\Controllers\Statiques.php(85): App\Controllers\Statiques->afficher('services/licence')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-17 00:17:49 --> [Caused by] mysqli_sql_exception: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 7 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 8 APPPATH\Controllers\Statiques.php(144): CodeIgniter\BaseModel->paginate(6)
+ 9 APPPATH\Controllers\Statiques.php(85): App\Controllers\Statiques->afficher('services/licence')
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-17 00:18:48 --> mysqli_sql_exception: Champ 'id_services' inconnu dans order clause in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\wamp64\www\mpem\system\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+#6 C:\wamp64\www\mpem\system\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(144): CodeIgniter\BaseModel->paginate(6)
+#8 C:\wamp64\www\mpem\app\Controllers\Statiques.php(85): App\Controllers\Statiques->afficher('services/licenc...')
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#11 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2024-09-17 00:18:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 2 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 4 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 5 APPPATH\Controllers\Statiques.php(144): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(85): App\Controllers\Statiques->afficher('services/licence')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-17 00:18:48 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 311.
+ 1 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 2 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 4 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 6 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 7 APPPATH\Controllers\Statiques.php(144): CodeIgniter\BaseModel->paginate(6)
+ 8 APPPATH\Controllers\Statiques.php(85): App\Controllers\Statiques->afficher('services/licence')
+ 9 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+10 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+11 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-09-17 00:18:48 --> [Caused by] mysqli_sql_exception: Champ 'id_services' inconnu dans order clause
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 306.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 3 SYSTEMPATH\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `articles`
+ORDER BY `id_services` DESC
+ LIMIT 6', [], false)
+ 5 SYSTEMPATH\Model.php(242): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(638): CodeIgniter\Model->doFindAll(6, 0)
+ 7 SYSTEMPATH\BaseModel.php(1243): CodeIgniter\BaseModel->findAll(6, 0)
+ 8 APPPATH\Controllers\Statiques.php(144): CodeIgniter\BaseModel->paginate(6)
+ 9 APPPATH\Controllers\Statiques.php(85): App\Controllers\Statiques->afficher('services/licence')
+10 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->licence()
+11 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+12 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-17 01:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-17 10:38:48 --> Error connecting to the database: mysqli_sql_exception: Base 'bdmpem' inconnue in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'bdmpem', 3306, '', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\wamp64\www\mpem\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/co...')
+#8 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Base 'bdmpem' inconnue in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\wamp64\www\mpem\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\wamp64\www\mpem\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#5 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#6 C:\wamp64\www\mpem\app\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/co...')
+#7 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#8 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-17 10:38:48 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Base 'bdmpem' inconnue
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `articles`', [], false)
+ 3 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/conventions')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-17 10:39:03 --> Error connecting to the database: mysqli_sql_exception: Base 'bdmpem' inconnue in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'bdmpem', 3306, '', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\wamp64\www\mpem\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/co...')
+#8 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Base 'bdmpem' inconnue in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\wamp64\www\mpem\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\wamp64\www\mpem\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#5 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#6 C:\wamp64\www\mpem\app\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/co...')
+#7 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#8 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-17 10:39:03 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Base 'bdmpem' inconnue
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `articles`', [], false)
+ 3 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/conventions')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-09-17 10:39:23 --> Error connecting to the database: mysqli_sql_exception: Base 'bdmpem' inconnue in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'bdmpem', 3306, '', 0)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\wamp64\www\mpem\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\wamp64\www\mpem\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#5 C:\wamp64\www\mpem\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#6 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#7 C:\wamp64\www\mpem\app\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/co...')
+#8 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#10 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Base 'bdmpem' inconnue in C:\wamp64\www\mpem\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\wamp64\www\mpem\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\wamp64\www\mpem\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\wamp64\www\mpem\system\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\wamp64\www\mpem\system\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+#4 C:\wamp64\www\mpem\system\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+#5 C:\wamp64\www\mpem\app\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+#6 C:\wamp64\www\mpem\app\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/co...')
+#7 C:\wamp64\www\mpem\system\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+#8 C:\wamp64\www\mpem\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+#9 C:\wamp64\www\mpem\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\wamp64\www\mpem\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2024-09-17 10:39:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: Base 'bdmpem' inconnue
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `articles`', [], false)
+ 3 SYSTEMPATH\Model.php(624): CodeIgniter\Database\BaseBuilder->countAllResults(false)
+ 4 SYSTEMPATH\BaseModel.php(1239): CodeIgniter\Model->countAllResults(false)
+ 5 APPPATH\Controllers\Statiques.php(143): CodeIgniter\BaseModel->paginate(6)
+ 6 APPPATH\Controllers\Statiques.php(117): App\Controllers\Statiques->afficher('publications/conventions')
+ 7 SYSTEMPATH\CodeIgniter.php(941): App\Controllers\Statiques->conventions()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Statiques))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-09-17 10:39:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 11:29:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 11:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 12:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 12:17:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 12:18:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 12:20:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:36:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:38:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:38:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:39:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:39:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:40:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:44:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:44:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 14:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-17 15:42:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
